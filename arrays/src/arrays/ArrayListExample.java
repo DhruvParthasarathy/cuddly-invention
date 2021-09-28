@@ -20,7 +20,11 @@ public class ArrayListExample {
 		 * *Not mandatory to pass in initial capacity as well
 		 */
 		
-		 //ArrayList<int> arrList1 = new ArrayList<>(5); //using ArrayList<int> throws an error why ? 
+		 //ArrayList<int> arrList1 = new ArrayList<>(5); //using ArrayList<int> throws an error why ?
+		
+		ArrayList arrList0 = new ArrayList();
+		
+		ArrayList arrListA = new ArrayList<>();
 		
 		ArrayList<int[]> arrList1 = new ArrayList<int[]>();
 		
@@ -92,6 +96,17 @@ public class ArrayListExample {
 		}
 		
 		System.out.println(arrList7); // [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+		
+		arrList7.add(0, arrList2);
+		
+		System.out.println(arrList7); // [[234, 224, 214, 254, 26234], [0, 1, 2], [0, 1, 2], [0, 1, 2]]
+		
+		arrList7.remove(1);
+		
+		System.out.println(arrList7); // [[234, 224, 214, 254, 26234], [0, 1, 2], [0, 1, 2]]
+		
+		
+		System.out.printf("Item at index 0 is : %s", arrList7.get(0));
 
 	}
 }
