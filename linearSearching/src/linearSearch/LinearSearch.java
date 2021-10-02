@@ -8,7 +8,9 @@ public class LinearSearch {
 		
 		int target = 10;
 		
-		System.out.println(linearSearch(nums, target));
+		System.out.println(linearSearch(nums, target)); // returns -1
+		
+		System.out.println(linearSearchRange(nums, 19, 1, 4)); // returns -1
 
 	}
 	
@@ -34,4 +36,22 @@ public class LinearSearch {
 		return -1;
 	}
 
+	/**
+	 * Search in range
+	 */
+	static int linearSearchRange(int[] arr, int target, int start, int end) {
+		
+		// check edge cases
+		if(arr.length == 0 || arr == null) {
+			return -1;
+		}
+		
+		// run a for loop
+		for (int index = start ; index <= end; index ++) {
+			if(arr[index] == target) {
+				return index;
+			}
+		}
+		return -1;
+	}
 }
