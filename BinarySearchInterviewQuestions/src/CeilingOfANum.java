@@ -6,7 +6,7 @@ public class CeilingOfANum {
 		
 		int[] numbersAsc = {1,3,5,7,9,11,13,19,23,29,31};
 		
-		int target = 20;
+		int target = 40;
 		System.out.println(ceiling(numbersAsc, target));
 
 	}

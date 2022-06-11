@@ -3,3 +3,9 @@
 *.class
 
 *.prefs
+
+*.classpath
+
+.gitignore
+
+*.project
