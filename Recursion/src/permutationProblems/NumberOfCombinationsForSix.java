@@ -9,10 +9,10 @@ public class NumberOfCombinationsForSix {
 		
     // Given a 6 faced dice, return the various combinations in which you can achieve the target value
 		ArrayList<List<Integer>> outPut = new ArrayList<List<Integer>>();
-    int targetValue = 4;
-    int achieved = 0;
-    ArrayList<Integer> existingCombo = new ArrayList<Integer>();
-    int[] options = new int[] {1,2,3,4,5,6};
+		int targetValue = 4;
+		int achieved = 0;
+		ArrayList<Integer> existingCombo = new ArrayList<Integer>();
+		int[] options = new int[] {1,2,3,4,5,6};
 		numberCombinations(achieved, targetValue, existingCombo, options, outPut);
 		System.out.println(outPut);
 	}
